@@ -1,0 +1,24 @@
+# ============= INSTANCE PATH ====================
+#instancePath        = "instances/project/project.2.dat";              # Input 
+#solutionFile        = "solutions/project_found/project.2_greedy.dat";       # Output
+instancePath        = "instances/inst/instance75.dat";              # Input 
+solutionFile        = "solutions/inst/instance75.dat";       # Output 
+
+
+# ================= SOLVER =======================
+solver              = "GRASP";          # Only suports Greedy or GRASP
+
+# ================= GRASP PARAMETERS =======================
+alpha               = 0.1;                 # Alpha parameter for the GRASP solver.
+maxIt         		 = 50;                   # Max iterations
+
+# ================= LOCAL SEARCH PARAMETERS =======================
+localSearch          = True;               # Enable local search?
+neighborhoodStrategy = "TaskExchange";      # Supported Neighborhoods: TaskExchange
+policy               = "FirstImprovement";   # Supported Policies: FirstImprovement / BestImprovement
+
+# ============== MAX EXEC TIME ===================
+maxExecTime          = 300;
+
+
+
